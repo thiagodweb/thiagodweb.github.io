@@ -1,0 +1,24 @@
+{
+  "name": "tsilva",
+  "authors": [
+    "thiago <thiago.dweb@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "bootstrap": "^3.3.6",
+    "requirejs": "^2.1.22",
+    "adaptive.background": "^1.0.3"
+  }
+}
