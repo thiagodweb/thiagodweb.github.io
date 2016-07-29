@@ -5,10 +5,12 @@ $(document).ready(function() {
   }
 
   setInterval(e, 600)
+  $(window).on('resize',function(){
+    $(".panel-body").height($(".job").height()+10);
+  }).resize();
   $(".card").flip({
     trigger: 'hover',
-    autoSize: true,
-    forceHeight: true
+    autoSize: true
   });
 });
 
