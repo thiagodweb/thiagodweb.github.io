@@ -337,6 +337,9 @@ h3 {
   -moz-box-shadow: inset 0px -8px 15px -4px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0px -8px 15px -4px rgba(0, 0, 0, 0.5);
 }
+#hold #topo h1 {
+  font-size: 6.25rem;
+}
 #hold #topo img {
   position: relative;
   margin-top: 20px;
