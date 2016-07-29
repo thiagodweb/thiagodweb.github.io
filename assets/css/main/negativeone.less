@@ -272,8 +272,12 @@ h1{font-size:3.12em;}h2{font-size:2.5em;}h3{font-size:1.7em;}
 		-webkit-box-shadow: inset 0px -8px 15px -4px rgba(0,0,0,0.5);
 		-moz-box-shadow: inset 0px -8px 15px -4px rgba(0,0,0,0.5);
 		box-shadow: inset 0px -8px 15px -4px rgba(0,0,0,0.5);
+		word-wrap: break-word;
 		h1{
 			font-size:6.25rem;
+			@media(max-width:767px){
+				font-size:4rem;
+			}
 		}
 		img{
 			position:relative;
@@ -302,6 +306,7 @@ h1{font-size:3.12em;}h2{font-size:2.5em;}h3{font-size:1.7em;}
 				padding:10px 0 0 0;
 				img{
 					width: 90% !important;
+					max-width:400px;
 					margin:0 auto !important;
 					-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
 					-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
@@ -325,9 +330,11 @@ h1{font-size:3.12em;}h2{font-size:2.5em;}h3{font-size:1.7em;}
 		}
 	}
 	#contato{
+		.text{
+			margin-top:8px;
+		}
 		img{
 			margin-right:20px;
-			vertical-align: middle;
 		}
 	}
 }

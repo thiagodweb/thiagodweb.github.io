@@ -336,9 +336,15 @@ h3 {
   -webkit-box-shadow: inset 0px -8px 15px -4px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: inset 0px -8px 15px -4px rgba(0, 0, 0, 0.5);
   box-shadow: inset 0px -8px 15px -4px rgba(0, 0, 0, 0.5);
+  word-wrap: break-word;
 }
 #hold #topo h1 {
   font-size: 6.25rem;
+}
+@media (max-width: 767px) {
+  #hold #topo h1 {
+    font-size: 4rem;
+  }
 }
 #hold #topo img {
   position: relative;
@@ -367,6 +373,7 @@ h3 {
 }
 #hold #trabalhos .panel .panel-body img {
   width: 90% !important;
+  max-width: 400px;
   margin: 0 auto !important;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.75);
@@ -386,7 +393,9 @@ h3 {
 #hold #trabalhos .panel .panel-body .back a:hover {
   color: #fff;
 }
+#hold #contato .text {
+  margin-top: 8px;
+}
 #hold #contato img {
   margin-right: 20px;
-  vertical-align: middle;
 }

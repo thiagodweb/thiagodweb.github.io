@@ -10,7 +10,8 @@ $(document).ready(function() {
   }).resize();
   $(".card").flip({
     trigger: 'hover',
-    autoSize: true
+    autoSize: true,
+    speed:250
   });
 });
 
