@@ -377,6 +377,11 @@ h3 {
   text-align: left;
   padding: 10px 20px;
 }
+@media (min-width: 768px) {
+  #hold #trabalhos .panel .panel-body .back {
+    padding: 20px 40px;
+  }
+}
 #hold #trabalhos .panel .panel-body .back span {
   margin-right: 10px;
 }
