@@ -7,7 +7,7 @@ $(document).ready(function() {
   setInterval(e, 600)
   $(window).on('resize',function(){
     $(".panel-body").height($(".job").height()+10);
-  }).resize();
+  });
   $(".card").flip({
     trigger: 'hover',
     autoSize: true,
@@ -17,6 +17,5 @@ $(document).ready(function() {
 
 $(window).load(function(){
   new WOW({mobile: false}).init();
-  $.adaptiveBackground.run();
-
+  $(this).resize();
 })
