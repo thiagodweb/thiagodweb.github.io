@@ -1,171 +1,173 @@
-<!DOCTYPE html>
+
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Thiago Silva - Desenvolvimento web</title>
 
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv=X-UA-Compatible content="IE=edge">
+  <title>Thiago Silva - Desenvolvimento web</title>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name=X-UA-Compatible content="IE=edge">
   <meta name=robots content=index,follow />
   <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name=title content="Thiago Silva - Desenvolvimento web">
   <meta name=description content="Desenvolvimento front-end com foco em UX e UI">
   <meta name=keywords content="front-end, ui, ux, desenvolvimento, desenvolvimento web, usabilidade">
-  <meta name="theme-color" content="">
 
-  <!--CSS-->
+
+  
+  <link rel="stylesheet" href="assets/css/main/negativeone.min.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
-  <style media="screen">
-  #hold,.center{width:100%}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1;font-family:Rubik}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}@font-face{font-family:Rubik;src:url(../../fonts/rubik/Rubik-Regular.ttf)}.border{border:1px solid red}.center{max-width:1360px;margin:0 auto}.bg-pattern{background-image:url(/assets/img/bg.png)}.bg-blue{background-color:#3498db}.bg-blue-light{background-color:#b6daf2}.bg-grey{background-color:#95a5a6}.bg-grey-light{background-color:#e8ecec}.bg-red{background-color:#e74c3c}.bg-red-light{background-color:#f8c9c4}.btn-blue-full{background:#3498db;border:1px solid #217dbb;color:#fff}.btn-blue-full:hover{background:#4aa3df;color:#fff}.btn-blue-empty{background:0 0;border:1px solid #3498db;color:#3498db}.btn-blue-empty:hover{background:#cce5f6;color:#217dbb}.btn-blue-link{background:0 0;color:#3498db}.btn-blue-link:hover{background:0 0;color:#5faee3}.btn-grey-full{background:#95a5a6;border:1px solid #798d8f;color:#fff}.btn-grey-full:hover{background:#a3b1b2;color:#fff}.btn-grey-empty{background:0 0;border:1px solid #95a5a6;color:#95a5a6}.btn-grey-empty:hover{background:#f6f7f7;color:#798d8f}.btn-grey-link{background:0 0;color:#95a5a6}.btn-grey-link:hover{background:0 0;color:#b1bdbd}.btn-red-full{background:#e74c3c;border:1px solid #d62c1a;color:#fff}.btn-red-full:hover{background:#ea6153;color:#fff}.btn-red-empty{background:0 0;border:1px solid #e74c3c;color:#e74c3c}.btn-red-empty:hover{background:#fbdedb;color:#d62c1a}.btn-red-link{background:0 0;color:#e74c3c}.btn-red-link:hover{background:0 0;color:#ed7669}.btn-high{padding:10px 15px}.color-white{color:#fff}.color-blue{color:#3498db}.color-grey{color:#95a5a6}.color-red{color:#e74c3c}.lead{font-size:130%}@media (max-width:767px){.text-xs-left{text-align:left}.text-xs-right{text-align:right}.text-xs-center{text-align:center}.pull-xs-right{float:right}}@media (min-width:768px){.text-sm-left{text-align:left}.text-sm-right{text-align:right}}.vspace{padding-top:20px;padding-bottom:20px}.hspace{padding-left:20px;padding-right:20px}h1{font-size:3.12em}h2{font-size:2.5em}h3{font-size:1.7em}.row{margin:0}.pisca{animation:pisca 2s alternate-reverse infinite}@keyframes pisca{from{display:none}to{display:block}}#hold .stripe{width:100%;border:2px solid #e74c3c}#hold #topo{padding:50px 30px;border-bottom:1px solid #3498db;-webkit-box-shadow:inset 0 -8px 15px -4px rgba(0,0,0,.5);-moz-box-shadow:inset 0 -8px 15px -4px rgba(0,0,0,.5);box-shadow:inset 0 -8px 15px -4px rgba(0,0,0,.5);word-wrap:break-word}#hold #topo h1{font-size:6.25rem}@media (max-width:767px){.pull-xs-left{float:left}#hold #topo h1{font-size:4rem}}#hold #topo img{position:relative;margin-top:20px;margin-bottom:-120px;border:4px solid #3498db;border-radius:50%}#hold #conteudo{padding-top:50px;color:#666;height:auto}#hold #conteudo .line{padding-top:50px;padding-bottom:50px}#hold #conteudo h2{margin-bottom:50px}#hold #trabalhos{border-radius:4px}#hold #trabalhos .panel .panel-body{padding:10px 0 0}#hold #trabalhos .panel .panel-body img{width:90%!important;max-width:400px;margin:0 auto!important;-webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.75);-moz-box-shadow:0 0 20px 0 rgba(0,0,0,.75);box-shadow:0 0 20px 0 rgba(0,0,0,.75)}#hold #trabalhos .panel .panel-body .back{background:#a82315;text-align:left;padding:10px 20px}#hold #trabalhos .panel .panel-body .back span{margin-right:10px}#hold #trabalhos .panel .panel-body .back a,#hold #trabalhos .panel .panel-body .back a:hover{color:#fff}#hold #contato .text{margin-top:8px}#hold #contato img{margin-right:20px}
-  </style>
+
 </head>
 <body>
 
-  <section id="hold">
-    <div class="stripe"></div>
-    <div class="row">
-      <section id='topo' class="col-12 bg-pattern">
-        <div class="col-12">
-          <div class="text-center col-12">
-            <h1 class="color-blue">thiago silva</h1>
-            <h3 class="color-red">desenvolvimento web<span blink>|</span></h3>
-            <img class='pisca center-block' src="assets/img/profile/me.jpg" alt="me" width="150" height="150">
+
+ <section id="conteudo">
+  <div class="container-fluid">
+
+    <section id='header' class="row bg-grey-light">
+      <div class="col-xs-12">
+        <h1 class='text-center color-blue wow fadeInUp' data-wow-duration='.5s'>thiago silva<span class='blink'>|</span></h1>
+        <h2 class="text-center color-red wow fadeInUp" data-wow-duration='.5s' data-wow-delay='.2s'>{desenvolvimeto web}</h2>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+    <section id='me'>
+      <img src="assets/img/profile/me.png" class='img-responsive img-rounded center-block  wow rollIn' data-wow-duration='.5s' data-wow-delay='.4s'>
+    </section>
+
+    <section id="aboutme">
+      <h1 class='color-blue text-center'><strong> // Um pouco sobre mim //</strong></h1>
+      <p class="lead text-center">
+        Desenvolvedor web com cerca de 1 ano de experiência, apaixonado por programação, gosto de desenvolver sistemas de alto desempenho e focados no UX, sempre dentro das melhores práticas apresentadas pelas ferramentas que utilizo. 
+        <br>
+        Apesar da pouca experiência, possuo bons conhecimentos em js (puro) e jquery, php, modelagem e immplementação de bancos de dados em sql e mysql e frameworks como laravel, yii e angularjs.
+      </p>
+    </section>
+
+    <section id="especialidades">
+      <h1 class='color-red text-center'><strong> // O que eu faço //</strong></h1>
+      <div class="row">
+
+        <div class="x col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration='.5s'>
+          <div class="thumbnail border-blue">
+            <img src="assets/img/icons/front.svg" alt="">
+            <div data-rect class="caption text-center">
+              <h3 class='color-red'><strong>Front-End</strong></h3>
+              <p >Um front-end bem construído reflete diretamente no desempenho do seu site, aumentando acessos e diminundo tempo de manutençao ou implementação de novas funcionalidades</p>
+            </div>
           </div>
         </div>
-      </section>
 
-      <section id="conteudo" class='clearfix col-xs-12'>
-
-        <section id="sobre" class='center text-center clearfix line'>
-          <h2 class="color-blue"><i>Ok, eu falo primeiro!</i></h2>
-
-          <div class="col-xs-12">
-            <p class='lead'>
-              Desenvolvedor web com cerca de 2 anos de experiênca com front end, back end e modelagem de bancos de dados.
-              <br>
-              Então se você precisa de um freela em front ou back, me liga, me manda um telegrama, uma carta de amor...
-              <br>
-            </p>
-          </div>
-
-        </section>
-        <hr>
-        <section id="trabalhos" class='center text-center clearfix line'>
-          <h2 class="color-blue"><i>Alguns trabalhos</i></h2>
-
-
-          <div class="col-xs-12 col-sm-6 col-md-5 col-lg-4  wow fadeInUp" data-wow-duration="0.5s">
-            <div class="panel panel-default bg-red " >
-              <div class="clearfix panel-body card" >
-                <div class="front">
-                  <img class='img-responsive job' src="assets/img/projects/bestberry.png" alt="bestberry">
-                </div>
-                <div class="color-white back">
-                  <p class='text-center'>
-                    Best berry
-                  </p>
-                  <hr>
-                  <p class='text-left'>
-                    Responsável pela reestruturação de todo o fluxo de novas assinaturas, sistema de compras unitário e redesign de páginas
-                    <br>
-                    <br>
-                    <p class='glyphicon glyphicon-link'></p> <a target="_blank" href="http://bestberry.com.br"><u>http://bestberry.com.br</u></a>
-                    <hr>
-                    #php, #laravel, #yii, #jquery, #js
-                  </p>
-                </div>
-              </div>
+        <div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration='.5s' data-wow-delay='.2s'>
+          <div class="thumbnail border-blue">
+            <img src="assets/img/icons/ux.svg" alt="">
+            <div data-rect class="caption text-center">
+              <h3 class='color-red'><strong>Ux</strong></h3>
+              <p>Entender como as pessoas interagem com o seu site, é um passo importante para o crescimento do seu negócio, uma simpes mudança de fluxo ou um campo a menos no formulário pode fazer uma grande diferença.</p>
             </div>
           </div>
+        </div>
 
-          <div class="col-xs-12  col-sm-6 col-md-5 col-lg-4 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
-            <div class="panel panel-default  bg-red" >
-              <div class="clearfix panel-body card" >
-                <div class="front">
-                  <img class='img-responsive job'src="assets/img/projects/zonaveg.png" alt="bestberry">
-                </div>
-                <div class="color-white back">
-                  <p class='text-center'>
-                    Zonaveg
-                  </p>
-                  <hr>
-                  <p class='text-left'>
-                    Responsável por toda a construção do site, desde a documentação do sistema passando pela modelagem do banco de dados
-                    <br>
-                    <br>
-                    <p class='glyphicon glyphicon-link'></p> <a target="_blank" href="http://zonaveg.com.br"><u>http://zonaveg.com.br</u></a>
-                    <hr>
-                    #php, #laravel, #jquery, #js, #mysql
-                  </p>
-                </div>
-              </div>
+        <div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration='.5s' data-wow-delay='.3s'>
+          <div class="thumbnail border-blue">
+            <img src="assets/img/icons/search.svg" alt="">
+            <div data-rect class="caption text-center">
+              <h3 class='color-red'><strong>SEO</strong></h3>
+              <p>De nada adianta pra uma empresa, um site bonito, rápido e funcional que não é listado os mecanismos de busca, antes dos seus clientes usarem o seu site lindo e rapido, eles precisam te achar!</p>
             </div>
           </div>
+        </div>
 
-        </section>
-        <hr>
-        <section id="contato" class=" text-xs-center vspace col-xs-12">
-          <h2 class="color-blue text-center"><i>Onde me encontrar</i></h2>
+      </div>
 
-          <div class="vspace col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="0.5s" >
-            <div class="col-xs-2">
-              <img class='pull-xs-left' src="assets/img/icons/phone.png" alt="">
-            </div>
-            <div class="col-xs-10 text">
-              (11) 96178-3663
-            </div>
-          </div>
+      <div class="row">
 
-          <div class="vspace col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="0.5s" >
-            <div class="col-xs-2">
-              <img class='pull-xs-left' src="assets/img/icons/mail.png" alt="">
-            </div>
-            <div class="col-xs-10 text">
-              thiago.dweb@gmail.com
+        <div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration='.5s' data-wow-delay='.4s'>
+          <div class="thumbnail border-blue">
+            <img src="assets/img/icons/back.svg" alt="">
+            <div data-rect class="caption text-center">
+              <h3 class='color-red'><strong>Back End</strong></h3>
+              <p >O back-end é o cérebro do seu site, é ele que vai definir grande parte das funcionalidades do seu sistema. Um back-end bem construído, melhora a rapidez, segurança e estabilidade do seu site</p>
             </div>
           </div>
+        </div>
 
-          <div class="vspace col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="0.5s" >
-            <div class="col-xs-2">
-              <img class='pull-xs-left' src="assets/img/icons/linkedin.png" alt="">
-            </div>
-            <div class="col-xs-10 text">
-              <a target='_blank' href="https://www.linkedin.com/in/thiago-silva-90279225">Thiago Silva</a>
-            </div>
-          </div>
-
-          <div class="vspace col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="0.5s" >
-            <div class="col-xs-2">
-              <img class='pull-xs-left' src="assets/img/icons/twitter.png" alt="">
-            </div>
-            <div class="col-xs-10 text">
-              <a target='_blank' href="https://twitter.com/thiagodweb">@thiagodweb</a>
+        <div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration='.5s' data-wow-delay='.5s'>
+          <div class="thumbnail border-blue">
+            <img src="assets/img/icons/database.svg" alt="">
+            <div data-rect class="caption text-center">
+              <h3 class='color-red'><strong>Banco de Dados</strong></h3>
+              <p>Se o back-end é o cérebro do sistema, o banco de dados é coração, por isso é extremamente necessário que a confidencialidade, confiabilidade e integridade sejam levados em consideração desde a modelagem do banco</p>
             </div>
           </div>
+        </div>
 
-          <div class="vspace col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration="0.5s" >
-            <div class="col-xs-2">
-              <img class='pull-xs-left' src="assets/img/icons/face.png" alt="">
-            </div>
-            <div class="col-xs-10 text">
-              <a target='_blank' href="http://facebook.com/thiagodweb">thiagodweb</a>
+        <div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration='.5s' data-wow-delay='.6s'>
+          <div class="thumbnail border-blue">
+            <img src="assets/img/icons/file.svg" alt="">
+            <div data-rect class="caption text-center">
+              <h3 class='color-red'><strong>Documentação</strong></h3>
+              <p>Também não adianta ter um sistema bem construído e um banco de dados seguro se isso tudo não for devidamente documentado. A documentação do sistema ajuda a entender o que ele faz, como faz e como ele foi construido.</p>
             </div>
           </div>
+        </div>
 
-        </section>
+      </div>
+    </section>
 
-      </section>
+    <section id="jobs">
+      <h1 class='color-blue text-center'><strong>// O que eu já fiz //</strong></h1>
+      <div class="row">
+        <div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration='.5s'>
+          <div data-rect class="thumbnail border-red">
+            <img src="/assets/img/projects/zonaveg.png" class='img-responsive'>
+          </div>
+        </div>
 
-    </div>
-    <div class="stripe"></div>
-  </section>
+        <div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration='.5s' data-wow-delay='.2s'>
+          <div data-rect class="thumbnail border-red">
+            <img src="/assets/img/projects/bestberry.png" class=' img-responsive'>
+          </div>
+        </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="bower_components/wow/dist/wow.min.js"></script>
-  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-  <script src="assets/js/main/scripts.min.js"></script>
+        <div class="col-xs-12 col-sm-4 wow fadeInUp" data-wow-duration='.5s' data-wow-delay='.3s'>
+          <div data-rect class="thumbnail border-red">
+            <img src="/assets/img/projects/seu-projeto.png" class='img-responsive'>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="container-fluid">
+    <section id='footer' class="row bg-grey-light">
+      <div class="col-xs-12">
+      <br>
+        <p class='text-center color-blue wow fadeInUp' data-wow-duration='.5s'>© 20015 • 2016 - thiago silva</p>
+      </div>
+    </section>
+  </div>
+</section>
 
+
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/wow/dist/wow.min.js"></script>
+<script src="bower_components/matchHeight/dist/jquery.matchHeight-min.js"></script>
+
+<script>
+  new WOW().init();
+
+  function blink() {
+    $(".blink").fadeOut(250), $(".blink").fadeIn(250)
+  }
+  $(window).on('load',function(){
+    setInterval(blink,900);
+    $("[data-rect]").matchHeight();
+
+  })
+</script>
 </body>
 </html>
