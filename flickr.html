@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Teste api flickr</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style >
+    #flickr{
+      margin-top:20px;
+    }
+    #flickr div{
+      margin-bottom:20px;
+    }
+  </style>
+</head>
+<body>
+
+
+<div class="container">
+  <div id='flickr' class="row">
+  <div class="col-xs-12 alert alert-info text-center">
+    <h1>EXEMPLO API FLICKR</h1>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script>
+
+  $(window).on('load',function(){
+
+    $.getJSON('http://api.flickr.com/services/feeds/photos_public.gne?format=json&jsoncallback=?',function(data){
+      for (var i = 0; i < 6; i++) {
+        var div = "<div class=' col-xs-6 col-md-2'><img class='img-responsive' src="+data.items[i].media.m+"></div>"
+        $("#flickr").append(div);
+      }
+    });
+
+  })
+  </script>
+</body>
+</html>
