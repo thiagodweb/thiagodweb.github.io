@@ -1,0 +1,42 @@
+$grid-gutter-width: 15px;
+$input-btn-focus-width:       1px !default;
+//
+// Color system
+//
+
+$black:  #000 !default;
+$white:  #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+
+$primary: #00868F !default;
+$secondary: #8e44ad !default;
+$blue:    #007bff !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #e74c3c !default;
+$orange:  #fd7e14 !default;
+$yellow:  #f39c12 !default;
+$green:   #2ecc71 !default;
+$teal:    #20c997 !default;
+$cyan:    #3498db !default;
+
+$theme-colors: (
+primary: $primary,
+secondary: $secondary,
+base: $gray-600,
+success: $green,
+info: $cyan,
+warning: $yellow,
+danger: $red,
+light: $gray-100,
+dark: $gray-800
+) !default;
