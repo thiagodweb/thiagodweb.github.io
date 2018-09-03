@@ -1,9 +1,9 @@
 <template lang="html">
     <!-- sobre mim -->
-    <section id="stuff" class='bg-light py-5'>
+    <section id="stuff" class=' bg-light py-5'>
         <div class="row px-5 py-4">
             <div class="col-12 mb-3">
-                <h2 class="text-primary"><i class="far fa-grin-stars mr-2"></i> E o que eu faço?</h2>
+                <h2 class="text-primary"><i class="far fa-grin-stars mr-2"></i> Sobre o que eu faço</h2>
             </div>
 
             <div data-aos="fade-right" data-aos-delay="50" class="col-12 col-md-4 d-flex">

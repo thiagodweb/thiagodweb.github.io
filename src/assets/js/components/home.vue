@@ -23,7 +23,7 @@ export default {
 #header{
     // background-color: #282c34;
     background-image: url('/src/assets/img/header.png');
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     min-height: 80vh;
     h1{
