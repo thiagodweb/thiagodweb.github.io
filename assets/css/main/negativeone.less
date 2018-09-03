@@ -1,0 +1,228 @@
+// REET CSS
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body{
+	font-family: 'Bariol-Regular' !important;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+// FIM RESET CSS
+
+// ---------------CORE------------
+@font-face {
+	font-family: 'Bariol-Regular';
+	src: local('Bariol-Regular'), url('../../fonts/bariol/Bariol.woff') format('woff');
+}
+
+body{
+	@media(max-width:767px){
+		font-size:80% !important;
+	}
+}
+p{
+	font-size:1.7rem;
+}
+
+
+@color-blue:#2980b9;
+@color-grey:#bdc3c7;
+@color-red:#e74c3c;
+
+.border{
+	border:1px solid red !important;
+}
+.border-red{
+	border:1px solid @color-red !important;
+}
+.border-blue{
+	border:1px solid @color-blue !important;
+}
+.no-border{
+	border:none !important;
+}
+
+.color-blue{
+	color:@color-blue !important;
+}
+
+.color-grey{
+	color:@color-grey !important;
+}
+
+.color-red{
+	color:@color-red !important;
+}
+.color-white{
+	color:#fff !important;
+}
+
+.bg-blue{
+	background-color:@color-blue;
+}
+
+.bg-grey{
+	background-color:@color-grey;
+}
+
+.bg-red{
+	background-color:@color-red;
+}
+
+.bg-blue-light{
+	background-color:lighten(@color-blue, 10%);
+}
+
+.bg-grey-light{
+	background-color:lighten(@color-grey, 10%);
+}
+
+.bg-red-light{
+	background-color:lighten(@color-red, 10%);
+}
+
+
+
+// ---------------CORE------------
+
+
+#conteudo{
+	width:100%;
+	height:auto;
+	#header{
+		background-image: url(../../img/bg.png);
+		padding: 120px 0;
+		border-top:5px solid @color-red;
+		border-bottom: 1px solid @color-grey;
+		h1{
+			margin: 0;
+			font-size: 12em;
+			font-weight: bold;
+		}
+	}
+
+	#me{
+		img{
+			background:#fff;
+			width:100%;
+			max-width:150px;
+			margin-top:-80px;
+			border: 2px solid @color-red;
+			-webkit-box-shadow: 0px 10px 24px -5px rgba(0,0,0,0.75);
+			-moz-box-shadow: 0px 10px 24px -5px rgba(0,0,0,0.75);
+			box-shadow: 0px 10px 24px -5px rgba(0,0,0,0.75);
+		}
+	}
+
+	#aboutme{
+		h1{
+			padding: 30px 0;
+		}
+		
+	}
+
+	#especialidades{
+		h1{
+			padding: 30px 0;
+		}
+		.thumbnail{
+			-webkit-box-shadow: 0px 10px 24px -2px rgba(0,0,0,0.7);
+			-moz-box-shadow: 0px 10px 24px -2px rgba(0,0,0,0.7);
+			box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.7);
+			transition: all 0.1s ease-in;
+
+			&:hover{
+				transform: translateY(5px);
+				-webkit-box-shadow: 0px 10px 24px -5px rgba(0,0,0,0.7);
+				-moz-box-shadow: 0px 10px 24px -5px rgba(0,0,0,0.7);
+				box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.7);
+				transition: all 0.1s ease-in;
+			}
+			img{
+				max-width:100px;
+				padding-top:10px;
+			}
+		}
+		
+	}
+
+	#jobs{
+		h1{
+			padding: 30px 0;
+		}
+		.thumbnail{
+			height:auto;
+			-webkit-box-shadow: 0px 10px 24px -2px rgba(0,0,0,0.7);
+			-moz-box-shadow: 0px 10px 24px -2px rgba(0,0,0,0.7);
+			box-shadow: 0px 0px 24px -2px rgba(0,0,0,0.7);
+			transition: all 0.1s ease-in;
+
+			&:hover{
+				transform: translateY(5px);
+				-webkit-box-shadow: 0px 10px 24px -5px rgba(0,0,0,0.7);
+				-moz-box-shadow: 0px 10px 24px -5px rgba(0,0,0,0.7);
+				box-shadow: 0px 0px 24px -5px rgba(0,0,0,0.7);
+				transition: all 0.1s ease-in;
+			}
+			img{
+				width:100%;
+				max-width:500px;
+			}
+			.caption{
+				p{
+					padding:0px 10px;
+					margin-bottom:10px;
+				}
+			}
+		}
+		
+	}
+	#contact{
+		h1{
+			padding: 30px 0;
+		}
+	}
+	#footer{
+		padding:20px;
+	}
+}
