@@ -1,0 +1,93 @@
+
+<html>
+<head>
+
+    <title>Thiago Silva -- Desenvolvimento web</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name=X-UA-Compatible content="IE=edge">
+    <meta name=robots content=index,follow />
+    <meta name=viewport content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name=title content="Thiago Silva - Desenvolvimento web">
+    <meta name=description content="Desenvolvimento front-end com foco em UX e UI">
+    <meta name=keywords content="front-end, ui, ux, desenvolvimento, desenvolvimento web, usabilidade">
+
+
+
+    <link rel="stylesheet" href="../assets/css/main/negativeone.min.css">
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bower_components/wow/css/libs/animate.css">
+
+</head>
+<body>
+
+
+    <section id="conteudo">
+        <div class="container-fluid">
+
+            <section id='header' class="row bg-grey-light">
+                <div class="col-xs-12">
+                    <h1 class='text-center color-blue wow fadeInUp' data-wow-duration='.5s'>thiago silva<span class='blink'>|</span></h1>
+                    <h2 class="text-center color-red wow fadeInUp" data-wow-duration='.5s' data-wow-delay='.2s'>{desenvolvimeto web}</h2>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <section id='me'>
+                <img src="../assets/img/profile/me.png" class='img-responsive img-rounded center-block  wow rollIn' data-wow-duration='.5s' data-wow-delay='.4s'>
+            </section>
+
+            <section id="flickr">
+                <div class="row flickr-photos">
+
+                </div>
+            </section>
+
+        </div>
+
+
+
+        <div class="container-fluid">
+            <section id='footer' class="row bg-grey-light">
+                <div class="col-xs-12">
+                    <br>
+                    <p class='text-center color-blue wow fadeInUp' data-wow-duration='.5s'>© 20015 • 2016 - thiago silva</p>
+                </div>
+            </section>
+        </div>
+    </section>
+
+
+
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../bower_components/wow/dist/wow.min.js"></script>
+    <script src="../bower_components/matchHeight/dist/jquery.matchHeight-min.js"></script>
+
+    <script>
+        new WOW().init();
+
+        function blink() {
+            $(".blink").fadeOut(250), $(".blink").fadeIn(250)
+        }
+
+        $(function(){
+            $.get("https://api.flickr.com/services/rest/?format=json&method=flickr.galleries.getPhotos&api_key=a5b5ec8834fd71f56bad75eea2ec3801&gallery_id=72157699121913970&per_page=6&page=1&nojsoncallback=1").then(function({photos}){
+                photos.photo.forEach((el,i) => {
+                    $(".flickr-photos").append(
+                    `<div class="col-xs-6">
+                        <img src="https://farm${el.farm}.staticflickr.com/${el.server}/${el.id}_${el.secret}.jpg"/>
+                    </div>`
+                    );
+                })
+            })
+        })
+
+        $(window).on('load',function(){
+            setInterval(blink,900);
+            $("[data-rect]").matchHeight();
+
+        })
+    </script>
+</body>
+</html>
